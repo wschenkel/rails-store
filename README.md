@@ -1,6 +1,4 @@
-# Aula 4 - Melhorando o código e o visual
-
-Curso de Ruby on Rails 5
+# Instruções 
 
 Para executar o projeto após o download, execute no terminal os seguintes comandos:
 
