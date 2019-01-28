@@ -1,0 +1,39 @@
+<%= form_for Produto.new do |form| %>
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="form-group">
+                <%= form.label :nome %> 
+                <%= form.text_field :nome, class:"form-control" %>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="form-group">
+                <%= form.label :descricao %>
+                <%= form.text_area :descricao, class:"form-control", rows:4 %>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="form-group">
+                <%= form.label :preco %> 
+                <%= form.number_field :preco, step:0.01, class:"form-control" %>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="form-group">
+                <%= form.label :quantidade %>
+                <%= form.number_field :quantidade, class:"form-control"  %>
+            </div>
+        </div>
+    </div>
+
+    <%= form.submit "Criar", class:"btn btn-primary" %>
+<% end %>
